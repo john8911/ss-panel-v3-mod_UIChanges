@@ -53,4 +53,11 @@ php xcat Tool initdownload
 0 0 * * * php -n /www/wwwroot/你的文件夹名/xcat Job DailyJob
 */1 * * * * php /www/wwwroot/你的文件夹名/xcat Job CheckJob
 */1 * * * * php /www/wwwroot/你的文件夹名/xcat syncnode
+
+30 22 * * * php /www/wwwroot/你的站点域名/xcat sendDiaryMail
+0 0 * * * php -n /www/wwwroot/你的站点域名/xcat dailyjob
+*/1 * * * * php /www/wwwroot/你的站点域名/xcat checkjob  
+*/1 * * * * php /www/wwwroot/你的站点域名/xcat synclogin
+*/1 * * * * php /www/wwwroot/你的站点域名/xcat syncvpn  
+*/1 * * * * php -n /www/wwwroot/你的站点域名/xcat syncnas
 ```
